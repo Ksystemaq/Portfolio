@@ -143,16 +143,18 @@ const Projects = () => {
                     >
                       <Github className="w-4 h-4" />
                     </a>
-                    <a
-                      href={proj.demoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded bg-teal-500/10 hover:bg-teal-500/20 text-teal-400 border border-teal-500/30 transition-all"
-                      title="Live Demo"
-                    >
-                      <span>Demo</span>
-                      <ExternalLink className="w-3 h-3" />
-                    </a>
+                    {proj.demoUrl && (
+                      <a
+                        href={proj.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded bg-teal-500/10 hover:bg-teal-500/20 text-teal-400 border border-teal-500/30 transition-all"
+                        title="Live Demo"
+                      >
+                        <span>Demo</span>
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -218,15 +220,17 @@ const Projects = () => {
                 <Github className="w-4 h-4" />
                 <span>GitHub Repository</span>
               </a>
-              <a
-                href={selectedProject.demoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-400 hover:bg-teal-300 text-slate-950 text-sm font-bold transition-colors"
-              >
-                <span>Launch Demo</span>
-                <ExternalLink className="w-4 h-4" />
-              </a>
+              {selectedProject.demoUrl && (
+                <a
+                  href={selectedProject.demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-teal-400 hover:bg-teal-300 text-slate-950 text-sm font-bold transition-colors"
+                >
+                  <span>Launch Demo</span>
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              )}
             </div>
           </div>
         </div>

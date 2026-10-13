@@ -10,8 +10,8 @@ export const portfolioData = {
     graduationYear: "2024",
     email: "johnalexisbatuigas22@gmail.com",
     phone: "+63 993 796 7094",
-    github: "https://github.com/johnalexis",
-    githubDisplay: "github.com/johnalexis",
+    github: "https://github.com/Ksystemaq",
+    githubDisplay: "github.com/Ksystemaq",
     linkedin: "https://linkedin.com/in/john-alexis-batuigas",
     linkedinDisplay: "linkedin.com/in/john-alexis-batuigas",
     bio: "A recent BSIT graduate of National Teachers College (NTC), looking for opportunities that can make use of my tech-related skills",
@@ -90,63 +90,83 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
+      title: "Spendwise – Financial & Expense Tracker",
+      category: "Web Applications",
+      description: "A full-stack personal finance and expense management platform built with Next.js and TypeScript. Features robust database modeling with Prisma ORM, secure authentication with Auth.js, and budget analytics.",
+      tags: ["Next.js", "TypeScript", "Prisma", "Tailwind CSS", "Auth.js"],
+      demoUrl: null,
+      githubUrl: "https://github.com/Ksystemaq/Spendwise",
+      featured: true,
+      accentColor: "teal",
+      highlights: [
+        "Next.js App Router & server-side rendering architecture",
+        "Prisma ORM schema migrations and database seeding",
+        "Personalized budget tracking and category expense reports"
+      ]
+    },
+    {
+      id: 2,
+      title: "SmartDental – Clinic Booking & Management",
+      category: "IT Systems",
+      description: "An end-to-end appointment scheduling and clinic operations management system powered by Supabase and React. Includes automated time-slot picking, notification center, and patient records management.",
+      tags: ["React", "JavaScript", "Supabase", "Tailwind CSS", "PostgreSQL"],
+      demoUrl: null,
+      githubUrl: "https://github.com/Ksystemaq/SmartDental",
+      featured: true,
+      accentColor: "blue",
+      highlights: [
+        "Multi-step appointment booking wizard with live slot validation",
+        "Supabase PostgreSQL backend with custom schema migrations",
+        "Centralized notification manager and interactive patient dashboard"
+      ]
+    },
+    {
+      id: 3,
+      title: "Modern Developer Portfolio",
+      category: "Web Applications",
+      description: "A sleek, high-performance portfolio application built with React, Vite, and Tailwind CSS. Features dynamic project showcases, smooth animations, dark/light theme switching, and interactive modals.",
+      tags: ["React", "Vite", "Tailwind CSS", "JavaScript"],
+      demoUrl: null,
+      githubUrl: "https://github.com/Ksystemaq/Portfolio",
+      featured: true,
+      accentColor: "cyan",
+      highlights: [
+        "Full light and dark mode theme switching via Context API",
+        "Responsive design with Lucide icons and particle effects",
+        "Modular component hierarchy and optimized Vite build"
+      ]
+    },
+    {
+      id: 4,
       title: "Campus IT Asset Management System",
       category: "IT Systems",
       description: "A comprehensive enterprise web application engineered to catalog, audit, and track hardware and software assets across campus labs with role-based access control.",
       tags: ["React", "Node.js", "Express", "MySQL", "Tailwind CSS"],
-      demoUrl: "https://example.com/demo-asset-manager",
-      githubUrl: "https://github.com/johnalexis/campus-it-assets",
-      featured: true,
-      accentColor: "teal",
-      highlights: ["Real-time inventory status", "QR code scanning simulation", "Exportable PDF/Excel audit reports"]
+      demoUrl: null,
+      githubUrl: "https://github.com/Ksystemaq/campus-it-assets",
+      featured: false,
+      accentColor: "emerald",
+      highlights: [
+        "Real-time inventory status",
+        "QR code scanning simulation",
+        "Exportable PDF/Excel audit reports"
+      ]
     },
     {
-      id: 2,
-      title: "NTC Student Academic Portal & Evaluation Tool",
-      category: "Web Applications",
-      description: "An intuitive student dashboard offering real-time grade calculations, course prerequisite tracking, and graduation pathway projections for NTC students.",
-      tags: ["React", "TypeScript", "Tailwind CSS", "Chart.js"],
-      demoUrl: "https://example.com/demo-portal",
-      githubUrl: "https://github.com/johnalexis/student-academic-portal",
-      featured: true,
-      accentColor: "blue",
-      highlights: ["GPA / GWA automated calculator", "Visual prerequisite roadmap", "Responsive dark/light UI"]
-    },
-    {
-      id: 3,
+      id: 5,
       title: "DevPulse - Tech Community & Blog",
       category: "Web Applications",
       description: "A developer forum and blogging hub where tech enthusiasts can publish technical articles, discuss emerging software trends, and share code snippets.",
       tags: ["React", "Firebase", "Tailwind CSS", "Markdown Parser"],
-      demoUrl: "https://example.com/demo-devpulse",
-      githubUrl: "https://github.com/johnalexis/devpulse-community",
+      demoUrl: null,
+      githubUrl: "https://github.com/Ksystemaq/devpulse-community",
       featured: false,
-      accentColor: "emerald",
-      highlights: ["Live markdown preview", "Syntax highlighted snippets", "Real-time comment threads"]
-    },
-    {
-      id: 4,
-      title: "Network Latency & Server Health Monitor",
-      category: "IT Systems",
-      description: "A lightweight dashboard simulating server status pings, bandwidth usage monitoring, and alerting administrators of downtime or high response times.",
-      tags: ["JavaScript", "React", "Node.js", "WebSockets"],
-      demoUrl: "https://example.com/demo-network-monitor",
-      githubUrl: "https://github.com/johnalexis/network-health-monitor",
-      featured: false,
-      accentColor: "cyan",
-      highlights: ["WebSocket live metrics", "Custom alerting thresholds", "Interactive uptime timeline"]
-    },
-    {
-      id: 5,
-      title: "Zenith Modern E-Commerce Storefront",
-      category: "Web Applications",
-      description: "A high-performance modern tech gear store with lightning-fast search, dynamic filtering, persistent shopping cart, and simulated checkout.",
-      tags: ["React", "Context API", "Tailwind CSS", "Vite"],
-      demoUrl: "https://example.com/demo-zenith-store",
-      githubUrl: "https://github.com/johnalexis/zenith-ecommerce",
-      featured: true,
       accentColor: "purple",
-      highlights: ["Instant category filters", "Persistent cart with localStorage", "Mobile-optimized drawer navigation"]
+      highlights: [
+        "Live markdown preview",
+        "Syntax highlighted snippets",
+        "Real-time comment threads"
+      ]
     },
     {
       id: 6,
@@ -154,11 +174,15 @@ export const portfolioData = {
       category: "Tools",
       description: "A drag-and-drop workflow productivity tool built for tech teams to organize sprint tasks, assign milestones, and monitor project burn-down.",
       tags: ["React", "Tailwind CSS", "Lucide Icons", "LocalStorage"],
-      demoUrl: "https://example.com/demo-kanban",
-      githubUrl: "https://github.com/johnalexis/smart-kanban-board",
+      demoUrl: null,
+      githubUrl: "https://github.com/Ksystemaq/smart-kanban-board",
       featured: false,
       accentColor: "indigo",
-      highlights: ["Smooth drag & drop", "Custom tag labels", "Task progress breakdown"]
+      highlights: [
+        "Smooth drag & drop task sorting",
+        "Custom tag labels and priority indicators",
+        "Task progress breakdown and local storage persistence"
+      ]
     }
   ],
   resume: {

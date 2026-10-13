@@ -105,7 +105,7 @@ const Footer = () => {
                 }`}
               >
                 <Github className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>GitHub ({personal.githubDisplay || 'johnalexis'})</span>
+                <span>GitHub ({personal.githubDisplay || 'Ksystemaq'})</span>
                 <ExternalLink className="w-3 h-3 text-slate-500" />
               </a>
               <a
