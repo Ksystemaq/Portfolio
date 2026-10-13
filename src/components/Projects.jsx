@@ -9,7 +9,7 @@ const Projects = () => {
   const [filter, setFilter] = useState('All');
   const [selectedProject, setSelectedProject] = useState(null);
 
-  const filterOptions = ['All', 'Web Applications', 'IT Systems', 'Tools'];
+  const filterOptions = ['All', ...Array.from(new Set(projects.map(p => p.category)))];
 
   const filteredProjects = filter === 'All'
     ? projects

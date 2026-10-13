@@ -92,7 +92,7 @@ export const portfolioData = {
       id: 1,
       title: "Spendwise – Financial & Expense Tracker",
       category: "Web Applications",
-      description: "A full-stack personal finance and expense management platform built with Next.js and TypeScript. Features robust database modeling with Prisma ORM, secure authentication with Auth.js, and budget analytics.",
+      description: "A full-stack personal finance and expense management platform built with Next.js and TypeScript. Features robust database modeling with Prisma ORM, secure authentication with Auth.js, and detailed budget analytics.",
       tags: ["Next.js", "TypeScript", "Prisma", "Tailwind CSS", "Auth.js"],
       demoUrl: null,
       githubUrl: "https://github.com/Ksystemaq/Spendwise",
@@ -108,7 +108,7 @@ export const portfolioData = {
       id: 2,
       title: "SmartDental – Clinic Booking & Management",
       category: "IT Systems",
-      description: "An end-to-end appointment scheduling and clinic operations management system powered by Supabase and React. Includes automated time-slot picking, notification center, and patient records management.",
+      description: "An end-to-end dental clinic appointment scheduling and operations management system powered by Supabase and React. Includes automated time-slot picking, notification center, and patient records management.",
       tags: ["React", "JavaScript", "Supabase", "Tailwind CSS", "PostgreSQL"],
       demoUrl: null,
       githubUrl: "https://github.com/Ksystemaq/SmartDental",
@@ -134,54 +134,6 @@ export const portfolioData = {
         "Full light and dark mode theme switching via Context API",
         "Responsive design with Lucide icons and particle effects",
         "Modular component hierarchy and optimized Vite build"
-      ]
-    },
-    {
-      id: 4,
-      title: "Campus IT Asset Management System",
-      category: "IT Systems",
-      description: "A comprehensive enterprise web application engineered to catalog, audit, and track hardware and software assets across campus labs with role-based access control.",
-      tags: ["React", "Node.js", "Express", "MySQL", "Tailwind CSS"],
-      demoUrl: null,
-      githubUrl: "https://github.com/Ksystemaq/campus-it-assets",
-      featured: false,
-      accentColor: "emerald",
-      highlights: [
-        "Real-time inventory status",
-        "QR code scanning simulation",
-        "Exportable PDF/Excel audit reports"
-      ]
-    },
-    {
-      id: 5,
-      title: "DevPulse - Tech Community & Blog",
-      category: "Web Applications",
-      description: "A developer forum and blogging hub where tech enthusiasts can publish technical articles, discuss emerging software trends, and share code snippets.",
-      tags: ["React", "Firebase", "Tailwind CSS", "Markdown Parser"],
-      demoUrl: null,
-      githubUrl: "https://github.com/Ksystemaq/devpulse-community",
-      featured: false,
-      accentColor: "purple",
-      highlights: [
-        "Live markdown preview",
-        "Syntax highlighted snippets",
-        "Real-time comment threads"
-      ]
-    },
-    {
-      id: 6,
-      title: "Smart Task & Project Kanban Board",
-      category: "Tools",
-      description: "A drag-and-drop workflow productivity tool built for tech teams to organize sprint tasks, assign milestones, and monitor project burn-down.",
-      tags: ["React", "Tailwind CSS", "Lucide Icons", "LocalStorage"],
-      demoUrl: null,
-      githubUrl: "https://github.com/Ksystemaq/smart-kanban-board",
-      featured: false,
-      accentColor: "indigo",
-      highlights: [
-        "Smooth drag & drop task sorting",
-        "Custom tag labels and priority indicators",
-        "Task progress breakdown and local storage persistence"
       ]
     }
   ],
