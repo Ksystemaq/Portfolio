@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Sun, Moon, Menu, X, FileText } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import { portfolioData } from '../data/portfolioData';
+import resumePdf from '../assets/resume.pdf';
 
-const Navbar = ({ onOpenResume }) => {
+const Navbar = () => {
   const { isDark, toggleTheme } = useTheme();
   const [activeSection, setActiveSection] = useState('home');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -150,18 +151,15 @@ const Navbar = ({ onOpenResume }) => {
               {item.name}
             </a>
           ))}
-          {onOpenResume && (
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenResume();
-              }}
+          <a
+              href={resumePdf}
+              download="John_Alexis_Batuigas_Resume.pdf"
+              onClick={() => setMobileMenuOpen(false)}
               className="w-full mt-2 flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-teal-500/10 border border-teal-500/40 text-teal-400 text-base font-semibold hover:bg-teal-500/20 transition-all"
-            >
+          >
               <FileText className="w-5 h-5" />
-              View Resume
-            </button>
-          )}
+              Download Resume
+          </a>
         </div>
       )}
     </header>
