@@ -2,9 +2,8 @@ import React from 'react';
 import Typewriter from './Typewriter';
 import { useTheme } from '../context/ThemeContext';
 import { portfolioData } from '../data/portfolioData';
-import resumePdf from '../assets/resume.pdf';
 
-const Hero = () => {
+const Hero = ({ onOpenResume }) => {
   const { personal } = portfolioData;
   const { isDark } = useTheme();
 
@@ -51,9 +50,8 @@ const Hero = () => {
               <span>View My Work</span>
             </a>
 
-            <a
-              href={resumePdf}
-              download="John_Alexis_Batuigas_Resume.pdf"
+            <button
+              onClick={onOpenResume}
               className={`inline-flex items-center justify-center px-6 py-3.5 rounded-lg font-semibold text-base shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ${
                 isDark
                   ? 'bg-[#0f172a]/90 hover:bg-[#1e293b] border border-teal-500/40 hover:border-teal-400 text-teal-300 hover:text-white'
@@ -61,7 +59,7 @@ const Hero = () => {
               }`}
             >
               <span>Download Resume</span>
-            </a>
+            </button>
           </div>
 
         </div>
