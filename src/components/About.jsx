@@ -1,10 +1,10 @@
 import React from 'react';
-import { GraduationCap, Award, Code2, Users, Compass, CheckCircle2 } from 'lucide-react';
+import { GraduationCap, Code2, Users, Compass, CheckCircle2 } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import { portfolioData } from '../data/portfolioData';
 
 const About = () => {
-  const { personal, about, stats } = portfolioData;
+  const { personal, about } = portfolioData;
   const { isDark } = useTheme();
 
   const iconMap = [
@@ -27,27 +27,6 @@ const About = () => {
             About <span className="text-teal-400">Me</span>
           </h2>
           <div className="w-16 h-1 bg-teal-400 rounded-full mt-4" />
-        </div>
-
-        {/* Stats Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-16">
-          {stats.map((item, idx) => (
-            <div
-              key={idx}
-              className={`rounded-2xl p-6 text-center transition-all duration-300 hover:-translate-y-1 group border ${
-                isDark
-                  ? 'bg-[#141d2e] border-slate-800 hover:border-teal-500/40 shadow-xl'
-                  : 'bg-white border-slate-200 shadow-md hover:border-teal-500/40'
-              }`}
-            >
-              <div className="text-2xl sm:text-3xl font-extrabold text-teal-500 mb-1 group-hover:scale-105 transition-transform">
-                {item.value}
-              </div>
-              <div className={`text-xs sm:text-sm font-bold tracking-tight ${isDark ? 'text-slate-200' : 'text-slate-800'}`}>
-                {item.label}
-              </div>
-            </div>
-          ))}
         </div>
 
         {/* Main Content Layout */}

@@ -23,12 +23,6 @@ export const portfolioData = {
       "a Tech Problem Solver"
     ],
   },
-  stats: [
-    { label: "Graduated", value: "NTC Manila" },
-    { label: "Degree", value: "BSIT" },
-    { label: "Projects Completed", value: "15+" },
-    { label: "Technologies", value: "12+" }
-  ],
   about: {
     paragraphs: [
       "I am a passionate and driven Information Technology graduate from the National Teachers College (NTC). Throughout my academic journey, I discovered a profound enthusiasm for building clean, user-centric web applications and dependable digital solutions.",
